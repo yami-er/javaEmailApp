@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Email {
     private String firstName;
     private String lastName;
-    private String Password;
+    private String password;
     private  String department;
     private String email;
     private int mailboxCapacity = 500;
@@ -19,8 +19,8 @@ public class Email {
     this.department = setDepartment();
 
     //call a method that returns a random password
-    this.Password = randomPassword(defaultPasswordLength);
-    System.out.println("Your password is: "+ this.Password);
+    this.password = randomPassword(defaultPasswordLength);
+    System.out.println("Your password is: "+ this.password);
     //combine elements to genetate email
     email = firstName.toLowerCase()+ "" + lastName.toLowerCase() + "@" + department +"."+ companySuffix;
 }
